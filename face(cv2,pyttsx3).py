@@ -33,8 +33,8 @@ while True:
         # Detect eyes within the face region
         eyes = eye_cascade.detectMultiScale(roi_gray, 1.3, 10)
         if len(eyes) == 0:
-            speak("samson go find your love young boy")
-            print("samson go find your love young boy")
+            speak("samson stop sleeping")
+            print("samson stop sleeping")
 
         # Detect smiles within the face region
         smile = smile_cascade.detectMultiScale(roi_gray, 1.7, 22)
